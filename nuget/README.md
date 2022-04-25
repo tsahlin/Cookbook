@@ -6,6 +6,10 @@
  - Open the generated `*.nuspec` file in a text editor
  - When done with the nuspec file, run `nuget pack <my file>.nuspec`
 
+### Inspecting a Nuget package
+
+ - Rename the `*.nupkg` file to `*.zip` and unzip the contents
+
 ### Using a local folder as a package source
 
  - Create an empty folder
