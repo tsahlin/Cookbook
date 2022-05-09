@@ -4,6 +4,7 @@
  - [Inspecting a Nuget package](#inspecting-a-nuget-package)
  - [Using a local folder as a package source](#using-a-local-folder-as-a-package-source)
  - [Overwriting an existing package version](#overwriting-an-existing-package-version)
+ - [Nuget cache folders](#nuget-cache-folders)
 
 ### Creating a Nuget package
 
@@ -26,3 +27,15 @@
 ### Overwriting an existing package version
 
  - Not possible - manually remove the version folder (`source/package-name/version`) and then use `nuget add` to re-add the package.
+ - After updating the package, it may be necessary to clear Nuget cache folders in order to not get outdated packages when building.
+
+### Nuget cache folders
+
+```
+nuget locals all -list
+```
+
+Usual locations:
+ - `<solution-dir>\packages`
+ - `%userprofile%\.nuget\packages`
+ - `%localappdata%\NuGet\v3-cache`
