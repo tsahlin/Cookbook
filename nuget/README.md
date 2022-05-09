@@ -1,5 +1,10 @@
 # Nuget
 
+ - [Creating a Nuget package](#creating-a-nuget-package)
+ - [Inspecting a Nuget package](#inspecting-a-nuget-package)
+ - [Using a local folder as a package source](#using-a-local-folder-as-a-package-source)
+ - [Overwriting an existing package version](#overwriting-an-existing-package-version)
+
 ### Creating a Nuget package
 
  - Open a cmd window inside a project directory and run `nuget spec`
@@ -17,3 +22,7 @@
  - The nuget command will setup the necessary directory structure
  - Add the folder as a Nuget source in Visual Studio
  - More info: [Local feeds](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds)
+
+### Overwriting an existing package version
+
+ - Not possible - manually remove the version folder (`source/package-name/version`) and then use `nuget add` to re-add the package.
