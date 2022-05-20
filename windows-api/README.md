@@ -29,9 +29,9 @@ void MySetThreadDescription(const wchar_t* desc)
 
     SetThreadDescFunc SetThreadDesc = (SetThreadDescFunc)GetProcAddress(hMod, "SetThreadDescription");
 
-	if (SetThreadDesc == NULL)
-		return;
+    if (SetThreadDesc == NULL)
+        return;
 
-	SetThreadDesc(GetCurrentThread(), desc);
+    SetThreadDesc(GetCurrentThread(), desc);
 }
 ```
