@@ -4,7 +4,15 @@ See also [Ubuntu](../ubuntu/README.md)
 
 ### Page contents
 
+ - [Change directory to that of the current script](#change-directory-to-that-of-the-current-script)
  - [Extract part of a string](#extract-part-of-a-string)
+
+### Change directory to that of the current script
+
+```bash
+#!/bin/bash
+cd "$(dirname "$0")"
+```
 
 ### Extract part of a string
 
