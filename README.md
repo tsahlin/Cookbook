@@ -4,6 +4,7 @@
  - [Android](android/README.md)
  - [Bash](bash/README.md)
  - [C#](c-sharp/README.md)
+ - [Git](git/README.md)
  - [Markdown](markdown/README.md)
  - [Nuget](nuget/README.md)
  - [Ubuntu](ubuntu/README.md)
